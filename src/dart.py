@@ -41,7 +41,7 @@ class Fetcher:
             d = start + timedelta(days=i)
             rdate = d.strftime("%Y%m%d")
             filename = "DART-" + rdate + ".html"
-            self.wget(url_template % rdate, self.savedir + filename)
+            self.wge(turl_template % rdate, self.savedir + filename)
             fsize = os.path.getsize(self.savedir + filename)/(1024**2)
             print("%s (%.2f MB) downloaded" % (filename, fsize))
     
