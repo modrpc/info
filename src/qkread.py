@@ -14,9 +14,11 @@ class qkItem:
         self.company = data[2]
         self.sector0 = data[3]
         self.sector1 = data[4]
+        self.price = float(data[5])
+        self.marketcap = float(data[6]) * 10^8
 
     def print(self):
-        print("%s (%s)" % (self.code, self.company))
+        print("%s (%s) %d %.1f" % (self.code, self.company, self.price, self.marketcap/10^8))
 
     def code(self):
         return self.code
