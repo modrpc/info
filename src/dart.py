@@ -26,6 +26,7 @@ class Fetcher:
         url = url + field_maxresult + "=" + maxresult
 
     def wget(self, url, local_filename):
+        print("wget: ", url)
         r = requests.get(url, headers=headers, stream=True)
         f = open(local_filename, "wb")
         for chunk in r.iter_content(chunk_size=1024):
@@ -50,8 +51,8 @@ class Fetcher:
 
 
 
-#f = Fetcher("/tmp/")
-#f.get(0, 0, 0, 0)
+f = Fetcher("/tmp/")
+f.get(0, 0, 0, 0)
 
 fname = "/tmp/DART-20170405.html"
 
