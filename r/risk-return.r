@@ -1,3 +1,4 @@
+### load quantmod package
 if(!("quantmod" %in% as.character(installed.packages()[,1])))
 { install.packages("quantmod") }
 library(quantmod)
@@ -5,36 +6,44 @@ library(quantmod)
 options("getSymbols.warning4.0"=FALSE,
         "getSymbols.auto.assign"=FALSE)
 
-
 ### Loads S&P 500 ETF data, stores closing prices as a vector
 SPY <- suppressWarnings(
-    getSymbols(c("SPY"),from = "2012-01-01"))
+    getSymbols(c("SPY"), from = "2012-01-01"))
 SPY <- as.numeric(SPY$SPY.Close)[1:987]
 
 ### Set Random Seed
 set.seed(123)
+
 ### Create Time Index
 t <- 1:(length(SPY)-1)
+
 ### Tradable Capital Vector
 Vt <- c(rep(10000, length(t)))
+
 ### Benchmark Return Series
 Rb <- rep(NA, length(t))
-for(i in 2:length(t)) { Rb[i] <- (SPY[i] / SPY[i - 1]) - 1 }
+for (i in 2:length(t)) {
+    Rb[i] <- (SPY[i] / SPY[i - 1]) - 1
+}
 
 ### Benchmark Equity Curve
 Eb <- rep(NA, length(t))
 Eb[1] <- Vt[1]
-for(i in 2:length(t)) { Eb[i] <- Eb[i-1] * (1 + Rb[i]) }
+for (i in 2:length(t)) {
+    Eb[i] <- Eb[i-1] * (1 + Rb[i])
+}
+
 ### Randomly Simulated Return Series 1
 Rt <- rep(NA, length(t))
-for(i in 2:length(t)){
+for(i in 2:length(t)) {
     Rt[i] <- Rb[i] + rnorm(n = 1,
                            mean = 0.24/length(t),
                            sd = 2.5 * sd(Rb, na.rm = TRUE))
 }
+
 ### Randomly Simulated Return Series 2
 Rt2 <- rep(NA, length(t))
-for(i in 2:length(t)){
+for(i in 2:length(t)) {
     Rt2[i] <- Rb[i] + rnorm(n = 1,
                             mean = 0.02/length(t),
                             sd = .75 * sd(Rb, na.rm = TRUE))
