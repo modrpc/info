@@ -9,7 +9,8 @@ options("getSymbols.warning4.0"=FALSE,
 ### Loads S&P 500 ETF data, stores closing prices as a vector
 SPY <- suppressWarnings(
     getSymbols(c("SPY"), from = "2012-01-01"))
-SPY <- as.numeric(SPY$SPY.Close)[1:987]
+###SPY <- as.numeric(SPY$SPY.Close)[1:987]
+SPY <- as.numeric(SPY$SPY.Close)[1:30]
 
 ### Set Random Seed
 set.seed(123)
@@ -35,7 +36,7 @@ for (i in 2:length(t)) {
 
 ### Randomly Simulated Return Series 1
 Rt <- rep(NA, length(t))
-for(i in 2:length(t)) {
+for (i in 2:length(t)) {
     Rt[i] <- Rb[i] + rnorm(n = 1,
                            mean = 0.24/length(t),
                            sd = 2.5 * sd(Rb, na.rm = TRUE))
@@ -43,7 +44,7 @@ for(i in 2:length(t)) {
 
 ### Randomly Simulated Return Series 2
 Rt2 <- rep(NA, length(t))
-for(i in 2:length(t)) {
+for (i in 2:length(t)) {
     Rt2[i] <- Rb[i] + rnorm(n = 1,
                             mean = 0.02/length(t),
                             sd = .75 * sd(Rb, na.rm = TRUE))
@@ -53,12 +54,16 @@ for(i in 2:length(t)) {
 ### Randomly Simulated Equity Curve 1
 Et <- rep(NA, length(t))
 Et <- Vt[1]
-for(i in 2:length(t)) { Et[i] <- Et[i-1] * (1 + Rt[i]) }
+for (i in 2:length(t)) {
+    Et[i] <- Et[i-1] * (1 + Rt[i])
+}
 
 ### Randomly Simulated Equity Curve 2
 Et2 <- rep(NA, length(t))
 Et2 <- Vt[1]
-for(i in 2:length(t)) { Et2[i] <- Et2[i-1] * (1 + Rt2[i]) }
+for (i in 2:length(t)) {
+    Et2[i] <- Et2[i-1] * (1 + Rt2[i])
+}
 
 ### Plot of Et1 against the SPY Portfolio
 plot(y = Et, x = t, type = "l", col = 1,
