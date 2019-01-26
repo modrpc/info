@@ -1,0 +1,16 @@
+* ssh login without passwd
+
+  - ssh-keygen -t rsa 
+  - cat ~/.ssh/id_rsa.pub | ssh cjeong@fermat 'cat >> .ssh/authorized_keys'
+
+* nmcli
+
+  - nmcli connection show -active
+  - nmcli device wifi list
+  - nmcli device status
+
+* lsusb
+
+* port listening
+  - linux: netstat -a
+  - windows: netstat -an
