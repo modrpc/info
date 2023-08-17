@@ -1,0 +1,529 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=latex 2023.7.1)  18 AUG 2023 00:17
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**\nonstopmode\input man.tex
+(./man.tex (/home/cjeong/doc/etc/tex/myproc.cls
+Document Class: myproc 1995/11/30 v1.3l Standard LaTeX document class
+(/home/cjeong/doc/etc/tex/myart.cls
+Document Class: myart 1996/10/31 v1.3u Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count185
+\c@section=\count186
+\c@subsection=\count187
+\c@subsubsection=\count188
+\c@paragraph=\count189
+\c@subparagraph=\count190
+\c@figure=\count191
+\c@table=\count192
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+))
+(/home/cjeong/doc/etc/tex/mydef.sty
+Package: mydef 
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/theorem.sty
+Package: theorem 2014/10/28 v2.2c Theorem extension package (FMi)
+\theorem@style=\toks16
+\theorem@bodyfont=\toks17
+\theorempreskipamount=\skip49
+\theorempostskipamount=\skip50
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/thp.sty
+File: thp.sty 2014/10/28 v2.2c Theorem extension package (FMi)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2021/12/07 v1.3c Standard LaTeX Color (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: dvips.def on input line 149.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/dvips.def
+File: dvips.def 2017/06/20 v3.1d Graphics/color driver for dvips
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+)))
+(/home/cjeong/doc/etc/tex/myenv.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/cjk-ko/kotex.sty
+Package: kotex 2015/04/19 v1.6 Korean TeX (ko.TeX)
+
+(/usr/share/texlive/texmf-dist/tex/latex/kotex-utf/kotex.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/kotex-utf/kotexutf.sty
+Package: kotexutf 2015/07/18 v2.1.1 typesetting UTF-8 Korean documents
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks18
+\inpenc@posthook=\toks19
+)
+(/usr/share/texlive/texmf-dist/tex/plain/kotex-plain/kotexutf-core.tex
+\unih@ngulpoint=\count193
+\dhucs@emph@raise=\dimen139
+)
+Now handling font encoding LUC ...
+... processing UTF-8 mapping file for font encoding LUC
+
+(/usr/share/texlive/texmf-dist/tex/latex/kotex-utf/lucenc.dfu
+File: lucenc.dfu 2007/09/05 UTF-8 support for dhucs
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+3001 (decimal 12289)
+   defining Unicode char U+3002 (decimal 12290)
+   defining Unicode char U+3008 (decimal 12296)
+   defining Unicode char U+3009 (decimal 12297)
+   defining Unicode char U+300A (decimal 12298)
+   defining Unicode char U+300B (decimal 12299)
+   defining Unicode char U+300C (decimal 12300)
+   defining Unicode char U+300D (decimal 12301)
+   defining Unicode char U+300E (decimal 12302)
+   defining Unicode char U+300F (decimal 12303)
+   defining Unicode char U+3010 (decimal 12304)
+   defining Unicode char U+3011 (decimal 12305)
+   defining Unicode char U+3014 (decimal 12308)
+   defining Unicode char U+3015 (decimal 12309)
+   defining Unicode char U+3016 (decimal 12310)
+   defining Unicode char U+3017 (decimal 12311)
+   defining Unicode char U+3018 (decimal 12312)
+   defining Unicode char U+3019 (decimal 12313)
+   defining Unicode char U+301A (decimal 12314)
+   defining Unicode char U+301B (decimal 12315)
+   defining Unicode char U+FF01 (decimal 65281)
+   defining Unicode char U+FF08 (decimal 65288)
+   defining Unicode char U+FF09 (decimal 65289)
+   defining Unicode char U+FF0C (decimal 65292)
+   defining Unicode char U+FF0E (decimal 65294)
+   defining Unicode char U+FF1A (decimal 65306)
+   defining Unicode char U+FF1B (decimal 65307)
+   defining Unicode char U+FF1C (decimal 65308)
+   defining Unicode char U+FF1D (decimal 65309)
+   defining Unicode char U+FF1E (decimal 65310)
+   defining Unicode char U+FF1F (decimal 65311)
+   defining Unicode char U+FF3B (decimal 65339)
+   defining Unicode char U+FF3D (decimal 65341)
+   defining Unicode char U+FF5B (decimal 65371)
+   defining Unicode char U+FF5D (decimal 65373)
+   defining Unicode char U+FF61 (decimal 65377)
+   defining Unicode char U+FF62 (decimal 65378)
+   defining Unicode char U+FF63 (decimal 65379)
+   defining Unicode char U+FF64 (decimal 65380)
+   defining Unicode char U+FF65 (decimal 65381)
+)
+\@josa=\count194
+\josatoks=\toks20
+
+(/usr/share/texlive/texmf-dist/tex/latex/cjk-ko/kolabels-utf.sty
+Package: kolabels-utf 2015/03/20 v1.5 UTF-8 Hangul item labels
+)))
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/mathptm.sty
+Package: mathptm 2020/03/25 PSNFSS-v9.3 Times w/ Math (SPQR, WaS) 
+
+
+Package mathptm Warning: This package is to be regarded as obsolete.
+(mathptm)                See the PSNFSS documentation.
+
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 31.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/ptmcm/m/n on input line 31.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ptmcm/m/n on input line 31.
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 32.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/ptmcm/m/it on input line 32.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/ptmcm/m/it on input line 32.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 33.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/pzccm/m/n on input line 33.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/pzccm/m/n on input line 33.
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 34.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/psycm/m/n on input line 34.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/psycm/m/n on input line 34.
+\symbold=\mathgroup4
+\symitalic=\mathgroup5
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 37.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 38.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/ptm/m/it on input line 38.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/ptm/m/it on input line 38.
+) (/usr/local/share/texmf/tex/latex/MinionPro/MinionPro.sty
+Package: MinionPro 2007/03/15 v2.1 MinionPro support for LaTeX
+
+(/usr/local/share/texmf/tex/latex/MinionPro/MinionPro-FontDef.sty
+File: MinionPro-FontDef.sty 2007/02/01 v2.2 font definition macros
+
+(/usr/local/share/texmf/tex/latex/MinionPro/otfontdef.sty
+Package: otfontdef 2005/06/04 v0.1e OpenType font definition
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks21
+))
+\Mn@option@normalsize=\dimen140
+Package MinionPro-FontDef Info: Configuration: smallfamily, noopticals, normals
+ize=10.0pt on input line 52.
+\Mn@config@cnt=\count195
+\Mn@fontdimen=\dimen141
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+)
+(/usr/local/share/texmf/tex/latex/MnSymbol/MnSymbol.sty
+Package: MnSymbol 2007/01/21 v1.4 support for the MnSymbol font
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2021/10/15 v2.17l AMS math features
+\@mathmargin=\skip51
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks22
+\ex@=\dimen142
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen143
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2021/08/26 v2.02 operator names
+)
+\inf@bad=\count196
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count197
+\leftroot@=\count198
+LaTeX Info: Redefining \overline on input line 399.
+\classnum@=\count199
+\DOTSCASE@=\count266
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box50
+\strutbox@=\box51
+\big@size=\dimen144
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count267
+\c@MaxMatrixCols=\count268
+\dotsspace@=\muskip16
+\c@parentequation=\count269
+\dspbrk@lvl=\count270
+\tag@help=\toks23
+\row@=\count271
+\column@=\count272
+\maxfields@=\count273
+\andhelp@=\toks24
+\eqnshift@=\dimen145
+\alignsep@=\dimen146
+\tagshift@=\dimen147
+\tagwidth@=\dimen148
+\totwidth@=\dimen149
+\lineht@=\dimen150
+\@envbody=\toks25
+\multlinegap=\skip52
+\multlinetaggap=\skip53
+\mathdisplay@stack=\toks26
+LaTeX Info: Redefining \[ on input line 2938.
+LaTeX Info: Redefining \] on input line 2939.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/eufrak.sty
+Package: eufrak 2009/06/22 v3.00 Euler Fraktur fonts
+LaTeX Font Info:    Overwriting math alphabet `\EuFrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 39.
+)
+LaTeX Info: Redefining \dagger on input line 84.
+LaTeX Info: Redefining \ddagger on input line 84.
+LaTeX Info: Redefining \mathparagraph on input line 84.
+LaTeX Info: Redefining \mathsection on input line 84.
+LaTeX Info: Redefining \mathdollar on input line 84.
+LaTeX Info: Redefining \mathsterling on input line 84.
+LaTeX Info: Redefining \Re on input line 84.
+LaTeX Info: Redefining \Im on input line 84.
+\symMnSyA=\mathgroup6
+\symMnSyB=\mathgroup7
+\symMnSyC=\mathgroup8
+\symMnSyD=\mathgroup9
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 119.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/psycm/m/n --> OMX/MnSymbolE/m/n on input line 119.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/psycm/m/n --> OMX/MnSymbolE/m/n on input line 119.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 120.
+LaTeX Font Info:    Encoding `OMS' has changed to `U' for symbol font
+(Font)              `symbols' in the math version `normal' on input line 120.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/pzccm/m/n --> U/MnSymbolF/m/n on input line 120.
+LaTeX Font Info:    Encoding `OMS' has changed to `U' for symbol font
+(Font)              `symbols' in the math version `bold' on input line 120.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/pzccm/m/n --> U/MnSymbolF/m/n on input line 120.
+LaTeX Font Info:    Overwriting symbol font `MnSyA' in version `bold'
+(Font)                  U/MnSymbolA/m/n --> U/MnSymbolA/b/n on input line 121.
+LaTeX Font Info:    Overwriting symbol font `MnSyB' in version `bold'
+(Font)                  U/MnSymbolB/m/n --> U/MnSymbolB/b/n on input line 122.
+LaTeX Font Info:    Overwriting symbol font `MnSyC' in version `bold'
+(Font)                  U/MnSymbolC/m/n --> U/MnSymbolC/b/n on input line 123.
+LaTeX Font Info:    Overwriting symbol font `MnSyD' in version `bold'
+(Font)                  U/MnSymbolD/m/n --> U/MnSymbolD/b/n on input line 124.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/MnSymbolE/m/n --> OMX/MnSymbolE/b/n on input line 1
+25.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  U/MnSymbolF/m/n --> U/MnSymbolF/b/n on input line 126.
+LaTeX Font Info:    Redeclaring math alphabet \mathcal on input line 241.
+LaTeX Font Info:    Overwriting math alphabet `\mathcal' in version `bold'
+(Font)                  OMS/MnSymbolS/m/n --> OMS/MnSymbolS/b/n on input line 2
+41.
+LaTeX Info: Redefining \longrightarrow on input line 548.
+LaTeX Info: Redefining \longleftarrow on input line 549.
+LaTeX Info: Redefining \longleftrightarrow on input line 550.
+LaTeX Info: Redefining \Longrightarrow on input line 551.
+LaTeX Info: Redefining \Longleftarrow on input line 552.
+LaTeX Info: Redefining \Longleftrightarrow on input line 553.
+LaTeX Info: Redefining \longmapsto on input line 554.
+LaTeX Info: Redefining \vdots on input line 868.
+LaTeX Font Info:    Redeclaring math symbol \braceld on input line 1721.
+LaTeX Font Info:    Redeclaring math symbol \bracelu on input line 1722.
+LaTeX Font Info:    Redeclaring math symbol \bracerd on input line 1723.
+LaTeX Font Info:    Redeclaring math symbol \braceru on input line 1724.
+LaTeX Info: Redefining \downbracefill on input line 1799.
+LaTeX Info: Redefining \upbracefill on input line 1800.
+LaTeX Info: Redefining \overbrace on input line 1819.
+LaTeX Info: Redefining \underbrace on input line 1820.
+LaTeX Info: Redefining \surd on input line 1843.
+LaTeX Font Info:    Redeclaring math accent \widehat on input line 1845.
+LaTeX Font Info:    Redeclaring math accent \widetilde on input line 1846.
+LaTeX Font Info:    Redeclaring math accent \vec on input line 1848.
+)
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 163.
+LaTeX Font Info:    Encoding `OT1' has changed to `T1' for symbol font
+(Font)              `operators' in the math version `normal' on input line 163.
+
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/ptmcm/m/n --> T1/MinionPro-OsF/m/n on input line 16
+3.
+LaTeX Font Info:    Encoding `OT1' has changed to `T1' for symbol font
+(Font)              `operators' in the math version `bold' on input line 163.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/ptmcm/m/n --> T1/MinionPro-OsF/m/n on input line 16
+3.
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 164.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/ptmcm/m/it --> OML/MinionPro-TOsF/m/it on input lin
+e 164.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/ptmcm/m/it --> OML/MinionPro-TOsF/m/it on input lin
+e 164.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  T1/MinionPro-OsF/m/n --> T1/MinionPro-OsF/eb/n on input
+ line 165.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/MinionPro-TOsF/m/it --> OML/MinionPro-TOsF/eb/it on
+ input line 166.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 167.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/ptm/bx/n --> T1/MinionPro-OsF/eb/n on input line 16
+7.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/ptm/bx/n --> T1/MinionPro-OsF/eb/n on input line 16
+7.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 168.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/ptm/m/it --> T1/MinionPro-OsF/m/it on input line 16
+8.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/ptm/m/it --> T1/MinionPro-OsF/m/it on input line 16
+8.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  T1/MinionPro-OsF/m/it --> T1/MinionPro-OsF/eb/it on inp
+ut line 169.
+\c@mv@tabular=\count274
+LaTeX Font Info:    Overwriting symbol font `operators' in version `tabular'
+(Font)                  T1/MinionPro-OsF/m/n --> T1/MinionPro-TOsF/m/n on input
+ line 171.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `tabular'
+(Font)                  OML/MinionPro-TOsF/m/it --> OML/MinionPro-TOsF/m/it on 
+input line 172.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `tabular'
+(Font)                  OT1/cmr/m/it --> T1/MinionPro-TOsF/m/it on input line 1
+73.
+\c@mv@boldtabular=\count275
+LaTeX Font Info:    Overwriting symbol font `operators' in version `boldtabular
+'
+(Font)                  T1/MinionPro-OsF/m/n --> T1/MinionPro-TOsF/eb/n on inpu
+t line 176.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `boldtabular'
+(Font)                  OML/MinionPro-TOsF/m/it --> OML/MinionPro-TOsF/eb/it on
+ input line 177.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `boldtabular
+'
+(Font)                  OT1/cmr/m/it --> T1/MinionPro-TOsF/eb/it on input line 
+178.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 179.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 180.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 181.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 182.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 183.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 184.
+LaTeX Font Info:    Redeclaring math accent \check on input line 185.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 186.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 187.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 188.
+
+(/usr/local/share/texmf/tex/latex/MinionPro/fontaxes.sty
+Package: fontaxes 2007/03/31 v0.2b Font selection axes
+LaTeX Info: Redefining \upshape on input line 26.
+LaTeX Info: Redefining \itshape on input line 28.
+LaTeX Info: Redefining \slshape on input line 30.
+LaTeX Info: Redefining \swshape on input line 32.
+LaTeX Info: Redefining \scshape on input line 34.
+LaTeX Info: Redefining \sscshape on input line 36.
+LaTeX Info: Redefining \ulcshape on input line 38.
+LaTeX Info: Redefining \textsw on input line 43.
+LaTeX Info: Redefining \textssc on input line 44.
+LaTeX Info: Redefining \textulc on input line 45.
+)
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 497.
+LaTeX Font Info:    Redeclaring math symbol \partial on input line 499.
+LaTeX Font Info:    Redeclaring math symbol \ell on input line 501.
+LaTeX Font Info:    Setting MinionPro-LF sub-encoding to TS1/1 on input line 52
+1.
+LaTeX Font Info:    Setting MinionPro-TLF sub-encoding to TS1/1 on input line 5
+22.
+LaTeX Font Info:    Setting MinionPro-OsF sub-encoding to TS1/1 on input line 5
+23.
+LaTeX Font Info:    Setting MinionPro-TOsF sub-encoding to TS1/1 on input line 
+524.
+LaTeX Info: Redefining \LaTeX on input line 596.
+LaTeX Font Info:    Trying to load font information for OT1+MinionPro-OsF on in
+put line 628.
+
+(/usr/local/share/texmf/tex/latex/MinionPro/OT1MinionPro-OsF.fd
+File: OT1MinionPro-OsF.fd 2005/01/23 v2.0 font definitions for OT1/MinionPro-Os
+F.
+
+(/usr/local/share/texmf/tex/latex/MinionPro/MinionPro-FontDef.sty
+File: MinionPro-FontDef.sty 2007/02/01 v2.2 font definition macros
+)))
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-dvips.def
+File: l3backend-dvips.def 2022-01-12 L3 backend support: dvips
+\l__pdf_internal_box=\box52
+\g__pdf_backend_object_int=\count276
+\l__pdf_backend_content_box=\box53
+\l__pdf_backend_model_box=\box54
+\g__pdf_backend_annotation_int=\count277
+\g__pdf_backend_link_int=\count278
+\g__pdf_backend_link_sf_int=\count279
+)
+(./man.aux)
+\openout1 = `man.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for LUC/nanummj/m/n on input line 14.
+LaTeX Font Info:    Trying to load font information for LUC+nanummj on input li
+ne 14.
+ (/usr/share/texlive/texmf-dist/tex/latex/nanumtype1/lucnanummj.fd
+File: lucnanummj.fd 2013/02/12 v0.1 Nanum Myeongjo font definitions
+)
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Font shape `LUC/nanummj/b/n' in size <12> not available
+(Font)              Font shape `LUC/nanummj/bx/n' tried instead on input line 1
+8.
+LaTeX Font Info:    Font shape `LUC/nanummj/b/n' in size <10> not available
+(Font)              Font shape `LUC/nanummj/bx/n' tried instead on input line 2
+1.
+LaTeX Font Info:    Font shape `LUC/nanummj/b/n' in size <9> not available
+(Font)              Font shape `LUC/nanummj/bx/n' tried instead on input line 2
+2.
+LaTeX Font Info:    Trying to load font information for TS1+MinionPro-OsF on in
+put line 26.
+
+(/usr/local/share/texmf/tex/latex/MinionPro/TS1MinionPro-OsF.fd
+File: TS1MinionPro-OsF.fd 2005/01/23 v2.0 font definitions for TS1/MinionPro-Os
+F.
+
+(/usr/local/share/texmf/tex/latex/MinionPro/MinionPro-FontDef.sty
+File: MinionPro-FontDef.sty 2007/02/01 v2.2 font definition macros
+)) (./man.toc
+LaTeX Font Info:    Trying to load font information for T1+MinionPro-OsF on inp
+ut line 2.
+
+(/usr/local/share/texmf/tex/latex/MinionPro/T1MinionPro-OsF.fd
+File: T1MinionPro-OsF.fd 2005/01/23 v2.0 font definitions for T1/MinionPro-OsF.
+
+
+(/usr/local/share/texmf/tex/latex/MinionPro/MinionPro-FontDef.sty
+File: MinionPro-FontDef.sty 2007/02/01 v2.2 font definition macros
+))
+LaTeX Font Info:    Trying to load font information for OML+MinionPro-TOsF on i
+nput line 2.
+
+(/usr/local/share/texmf/tex/latex/MinionPro/OMLMinionPro-TOsF.fd
+File: OMLMinionPro-TOsF.fd 2005/01/23 v2.0 font definitions for OML/MinionPro-T
+OsF.
+
+(/usr/local/share/texmf/tex/latex/MinionPro/MinionPro-FontDef.sty
+File: MinionPro-FontDef.sty 2007/02/01 v2.2 font definition macros
+))
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 2
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
+)
+\tf@toc=\write3
+\openout3 = `man.toc'.
+
+ [1
+
+
+] (./man.aux) ) 
+Here is how much of TeX's memory you used:
+ 6479 strings out of 478288
+ 103563 string characters out of 5849316
+ 345485 words of memory out of 5000000
+ 24549 multiletter control sequences out of 15000+600000
+ 590332 words of font info for 116 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 83i,5n,90p,280b,426s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on man.dvi (1 page, 5704 bytes).
