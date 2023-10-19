@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko" ng-app="center" ng-strict-di="true">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta property="og:title" content="스마트스토어센터">
+	<meta property="og:url" content="https://sell.smartstore.naver.com">
+	<meta property="og:image" content="/images/icon/og_sell_smartstore.jpg">
+	<meta property="og:description" content="누구나 쉽고 편리하게 만드는 스마트스토어에서 내 가게를 만들어보세요."/>
+    <title>네이버 스마트스토어센터</title>
+
+	<!-- For old IEs -->
+	<link rel="shortcut icon" type="image/x-icon" href="/images/icon/favicon_16x16.ico">
+	<!-- For new browsers - multisize ico  -->
+	<link rel="icon" type="image/x-icon" sizes="16x16" href="/images/icon/favicon_16x16.ico">
+	<link rel="icon" type="image/x-icon" sizes="32x32" href="/images/icon/favicon_32x32.ico">
+
+	<!-- for Android Chrome -->
+	<link rel="icon" sizes="192x192" href="/images/icon/favicon-192-20180619.png">
+	<!-- for iPhone 6 Plus; other device will scale it down as needed -->
+	<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/images/icon/favicon-180-20180619.png">
+    <!-- pacejs http://github.hubspot.com/pace/ -->
+    <link href="./pace.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script type="text/javascript" src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/maps3.js"></script>
+
+    
+        <script type="text/javascript" src="https://editor-static.pstatic.net/v/basic/1.45.0/se.viewer.js?v="></script>
+    
+
+    
+    <link href="./vendors.css?949f271bef5dc8d9fa67" rel="stylesheet">
+    
+    <link href="./app.css?949f271bef5dc8d9fa67" rel="stylesheet">
+    
+</head>
+
+<!--<script type="text/javascript">
+    window.name = "NG_DEFER_BOOTSTRAP!";
+</script>-->
+
+<body ncp-nclicks>
+<!-- loading -->
+<div class="seller-floating-wrap" id="__initial_loading">
+    <div class="inner-wrap">
+        <div>
+            <img src="images/loading_gray.gif" alt="로딩중" />
+        </div>
+    </div>
+</div>
+<div class="seller-floating-wrap dimmed" id="__request_loading" style="display: none;">
+	<div class="inner-wrap">
+		<div>
+			<img src="images/loading_white.gif" alt="로딩중" />
+		</div>
+	</div>
+</div>
+<!-- //loading -->
+<ui-view class="wrap"></ui-view>
+<ui-view name="work"></ui-view>
+
+<script type="text/javascript" src="./vendors.js?949f271bef5dc8d9fa67"></script>
+
+<script type="text/javascript" src="./app.js?949f271bef5dc8d9fa67"></script>
+
+<script type="text/javascript">
+    window.onload = function() {
+        var loading = document.getElementById("__initial_loading");
+        loading.style.display = "none";
+    }
+</script>
+<script type="text/javascript">
+    window.paceOptions = {
+        restartOnRequestAfter: true,
+        ajax: {
+            trackWebSockets: false,
+            ignoreURLs: ['socket.io', 'asyncdownload/health', '/sell/center/front-history/'],
+            trackMethods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH']
+        }
+    }
+</script>
+<script type="text/javascript" src="./pace.min.js"></script>
+
+<!--
+<script type="text/javascript">
+    $(document).ready(function() {
+        $.when($.ajax("/api/context")).then(function(data) {
+            angular.module("center").constant("userContext", data);
+            angular.resumeBootstrap();
+        });
+    });
+</script>
+-->
+</body>
+</html>
