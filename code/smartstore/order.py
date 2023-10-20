@@ -1,5 +1,8 @@
 import pandas as pd
 
+filename = 'test0-nopasswd.xlsx'
+nan_values = ['NaN', 'nan']
+
 class OrderException(Exception):
     pass
 
@@ -28,28 +31,30 @@ class OrderItem:
 
     def print(self, prefix):
         if (self.item_type == '단일상품'):
-            print(prefix, self.item_name, ' x', self.item_quantity)
+            print(prefix, self.item_name, ' x', self.item_quantity, sep='')
         elif (self.item_type == '조합형옵션상품'):
-            print(prefix, self.item_option, ' x', self.item_quantity)
+            print(prefix, self.item_option, ' x', self.item_quantity, sep='')
 
 class Order:
     def __init__(self, row):
         self.order_no = int(row['주문번호'])
-        self.customer_name = row['구매자명']
-        self.recipient_name = row['수취인명']
+        self.customer_name = row['구매자명'].strip()
+        self.recipient_name = row['수취인명'].strip()
         self.recipient_addr = str(row['기본배송지']) + ' ' + str(row['상세배송지'])
-        self.customer_phone = row['구매자연락처']
-        self.recipient_phone1 = row['수취인연락처1']
-        self.recipient_phone2 = row['수취인연락처2']
-        self.delivery_message = row['배송메세지']
+        self.customer_phone = str(row['구매자연락처']).strip()
+        self.recipient_phone1 = str(row['수취인연락처1']).strip()
+        self.recipient_phone2 = str(row['수취인연락처2']).strip()
+        self.delivery_message = str(row['배송메세지']).strip()
         self.order_items = []
 
     def print(self):
-        print(self.order_no, ':')
-        print('\t', self.customer_name, ' (', self.customer_phone, ')')
+        print('order#', self.order_no, ':', sep='')
+        print('\t', self.customer_name, ' (', self.customer_phone, ')', sep='')
         print('\t', self.recipient_name, ' (', self.recipient_phone1, ', ',
-              self.recipient_phone2, ')')
-        print('\t', self.recipient_addr)
+              self.recipient_phone2, ')', sep='')
+        print('\t', self.recipient_addr, sep='')
+        if (self.delivery_message not in nan_values):
+            print('\t', self.delivery_message, sep='')
 
     def add_order_item(self, row):
         item = OrderItem(row)
@@ -90,9 +95,6 @@ class OrderDict:
         order = Order(row)
         self.dict[order_no] = order
         return order
-
-filename = '20221030.xlsx'
-na_values = 'NaN'
 
 df = pd.read_excel(filename, sheet_name='발주발송관리', skiprows=[0])
 
