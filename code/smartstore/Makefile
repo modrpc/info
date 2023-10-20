@@ -1,3 +1,7 @@
+init:
+	pip install -r requirements.txt
 
-all:
-	python3 order.py
+test:
+	py.test tests
+
+.PHONY: init test

@@ -1,9 +1,7 @@
 import pandas as pd
 
-filename = 'test0-nopasswd.xlsx'
 nan_values = ['NaN', 'nan']
 debug = False
-
 
 class OrderException(Exception):
     pass
@@ -98,34 +96,32 @@ class OrderDict:
         self.dict[order_no] = order
         return order
 
-df = pd.read_excel(filename, sheet_name='발주발송관리', skiprows=[0])
+def build_orders_from(filename):
+    df = pd.read_excel(filename, sheet_name='발주발송관리', skiprows=[0])
 
-
-dict = OrderDict(df.columns)
-if (debug):
-    print(df.columns)
-
-for index, row in df.iterrows():
-    order_no = int(row['주문번호'])
+    dict = OrderDict(df.columns)
     if (debug):
-        print('**', index, row['주문번호'], row['상품주문번호'])
-    if (not dict.contains(order_no)):
-        if (debug):
-            print(index, row['주문번호'])
-        order = dict.insert(order_no, row)
-        item = order.add_order_item(row)
-        if (debug):
-            if (not item.is_canceled()):
-                order.print()
-    else:
-        try:
-            order = dict.get_order(order_no)
-            order.add_order_item(row)
-            if (debug):
-                print('\tFOUND_ORDER')
-        except OrderException:
-            print('ERROR: no such order -- ', order_no)
-            pass
+        print(df.columns)
+
+    for index, row in df.iterrows():
+        order_no = int(row['주문번호'])
+        if (debug): print('**', index, row['주문번호'], row['상품주문번호'])
+        if (not dict.contains(order_no)):
+            if (debug): print(index, row['주문번호'])
+            order = dict.insert(order_no, row)
+            item = order.add_order_item(row)
+            if (debug): if (not item.is_canceled()): order.print()
+        else:
+            try:
+                order = dict.get_order(order_no)
+                order.add_order_item(row)
+                if (debug): print('\tFOUND_ORDER')
+            except OrderException:
+                print('ERROR: no such order -- ', order_no)
+                pass
+
+    return df.get_orders()
+
 
 def dump_orders(orders):
     for key in orders:
@@ -137,23 +133,5 @@ def dump_orders(orders):
         for item in items:
             item.print('\t\t')
 
-def build_excel_orders(orders):
-    for key in orders:
-        if (order.is_canceled()):
-            continue
-        order.print()
-        items = order.get_order_items()
-        for item in items:
-            item.print('\t\t')
 
-dump_orders(dict.get_orders())
         
-orders = dict.get_orders()
-for key in orders:
-    order = orders[key]
-    if (order.is_canceled()):
-        continue
-    order.print()
-    items = order.get_order_items()
-    for item in items:
-        item.print('\t\t')
