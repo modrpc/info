@@ -6,4 +6,7 @@ prep:
 run:
 	python main.py
 
+clean:
+	rm -rf __pycache__
+
 .PHONY: init test
