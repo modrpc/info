@@ -1,4 +1,6 @@
 import pandas as pd
+import numpy as np
+import openpyxl
 
 nan_values = ['NaN', 'nan']
 debug = False
@@ -29,6 +31,14 @@ class OrderItem:
         else:
             return False
 
+    def __str__(self):
+        s = ''
+        if (self.item_type == '단일상품'):
+            s =  str(self.item_name + str(self.item_quantity))
+        elif (self.item_type == '조합형옵션상품'):
+            s = str(self.item_option.strip(' ') + str(self.item_quantity))
+        return s
+
     def print(self, prefix):
         if (self.item_type == '단일상품'):
             print(prefix, self.item_name, ' x', self.item_quantity, sep='')
@@ -46,6 +56,7 @@ class Order:
         self.recipient_phone2 = str(row['수취인연락처2']).strip()
         self.delivery_message = str(row['배송메세지']).strip()
         self.order_items = []
+        self.slist = []
 
     def print(self):
         print('order#', self.order_no, ':', sep='')
@@ -64,12 +75,33 @@ class Order:
     def get_order_items(self):
         return self.order_items
 
+    def str_order_items(self):
+        s = ''
+        for item in self.order_items:
+            s = s + str(item) + ' '
+        return s
+
     def is_canceled(self):
         retval = True
         for item in self.order_items:
             if (not item.is_canceled()):
                 retval = False
         return retval
+
+    def to_list(self):
+        self.slist.append(self.customer_name)
+        self.slist.append(self.recipient_addr)
+        self.slist.append(self.recipient_phone1)
+        self.slist.append(self.recipient_phone1)
+        self.slist.append(1)
+        self.slist.append(3650)
+        self.slist.append('선불')
+        self.slist.append(self.str_order_items())
+        msg = '< 꼭 당일배송, 파손주의 > 안정배송부탁드립니다.'
+        if (self.delivery_message not in nan_values):
+            msg = self.delivery_message + ' ' + msg
+            self.slist.append(msg)
+        return self.slist
 
 class OrderDict:
     def __init__(self, columns):
@@ -105,22 +137,26 @@ def build_orders_from(filename):
 
     for index, row in df.iterrows():
         order_no = int(row['주문번호'])
-        if (debug): print('**', index, row['주문번호'], row['상품주문번호'])
+        if (debug):
+            print('**', index, row['주문번호'], row['상품주문번호'])
         if (not dict.contains(order_no)):
-            if (debug): print(index, row['주문번호'])
+            if (debug):
+                print(index, row['주문번호'])
             order = dict.insert(order_no, row)
             item = order.add_order_item(row)
-            if (debug): if (not item.is_canceled()): order.print()
+            if (debug):
+                if (not item.is_canceled()): order.print()
         else:
             try:
                 order = dict.get_order(order_no)
                 order.add_order_item(row)
-                if (debug): print('\tFOUND_ORDER')
+                if (debug):
+                    print('\tFOUND_ORDER')
             except OrderException:
                 print('ERROR: no such order -- ', order_no)
                 pass
 
-    return df.get_orders()
+    return dict
 
 
 def dump_orders(orders):
@@ -133,5 +169,17 @@ def dump_orders(orders):
         for item in items:
             item.print('\t\t')
 
+
+def export_excel(orders):
+    rows = []
+    for key in orders:
+        order = orders[key]
+        if (order.is_canceled()):
+            continue
+        l = order.to_list()
+        rows.append(l)
+    npa = np.array(rows)
+    return npa
+        
 
         
